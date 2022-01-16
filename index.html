@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/design.css" type="text/css" rel="stylesheet">
+    <title>Stundenplan</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Stundenplan BBZ BL</h2>
+
+        <label for="beruf">Beruf:</label>
+        <br />
+        <select name="beruf" id="beruf" class="form-control">
+
+            <option>Bitte Beruf Wählen .. </option>
+
+        </select>
+
+        <div id="klasseRow">
+            <label for="klasse">Klasse:</label>
+            <br />
+            <select name="klasse" id="klasse" class="form-control">
+                <option disabled selected>Bitte Klasse Wählen .. </option>
+            </select>
+            <br />
+        </div>
+
+
+        <div id="table-div" class="table-responsive">
+
+            <div class="container">
+                <div id="button" class="row justify-content-md-center">
+                    <div class="col col-lg-2">
+                        <button id="zurück" type="button" class="btn btn-primary">zurück</button>
+                    </div>
+                    <div class="col col-lg-2">
+                        <label id="date" class="form-floating mb-3"></label>
+                    </div>
+                    <div class="col col-lg-2">
+                        <button id="vor" type="button" class="btn btn-primary">Vor</button>
+                    </div>
+                    <button id="löschButton" type="button" class="btn btn-danger">Cache löschen</button>
+
+                </div>
+                <div class="mt-2 col-md-12" id="message"></div>
+
+
+                <table id="table" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Datum</th>
+                            <th scope="col">Wochentag</th>
+                            <th scope="col">Von</th>
+                            <th scope="col">Bis</th>
+                            <th scope="col">Lehrer</th>
+                            <th scope="col">Fach</th>
+                            <th scope="col">Raum</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyid">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/javascript.js"></script>
+
+</body>
+
+</html>
